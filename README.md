@@ -1,53 +1,83 @@
-# Mithun's Developer Portfolio
+# Mithun Kumar — Portfolio v2
 
-A modern, production-ready developer portfolio built with Next.js 14, Tailwind CSS, and TypeScript. Featuring a premium design with glassmorphism, dark mode, smooth animations, and a responsive layout.
+🚀 A premium, modern developer portfolio built with **Next.js 14**, **Tailwind CSS**, **Framer Motion**, and **TypeScript**.
 
-## � Features
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00bcd4?style=for-the-badge&logo=vercel)](https://mithun-portfolio-v2.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-MithunKiet-181717?style=for-the-badge&logo=github)](https://github.com/MithunKiet)
 
-- **Next.js 14** (App Router)
-- **TypeScript** for type safety
-- **Tailwind CSS** for modern utility-first styling
-- **Framer Motion** for smooth, interactive animations
-- **Dark Mode** support
-- **Responsive Design** across all devices
-- **Glassmorphism** UI elements
-- Advanced features like typing animations and project filtering
+---
 
-## 📦 Getting Started
+## ✨ Features
 
-### Prerequisites
+- **Dark-first, minimal luxury design** — inspired by Linear, Vercel & Raycast
+- **Space Grotesk + Inter typography** — geometric, modern, highly legible
+- **Smooth animations** — Framer Motion scroll reveals, typing effect, micro-interactions
+- **Pill-style navbar** — with animated active section indicator using IntersectionObserver
+- **Infinite scrolling skills marquee** — auto-pausing on hover
+- **GitHub API integration** — live project cards with language filters
+- **Fully responsive** — mobile, tablet, and desktop optimized
+- **Light & dark mode** — seamless theme toggle with next-themes
+- **Gradient mesh background** — subtle radial gradients with noise overlay
+- **Glassmorphism cards** — frosted glass effects with border shimmer on hover
 
-Ensure you have Node.js installed (v18+ recommended).
+## 🛠 Tech Stack
 
-### Installation
+| Category     | Technologies                                      |
+|-------------|---------------------------------------------------|
+| Framework   | Next.js 14, React 18, TypeScript                  |
+| Styling     | Tailwind CSS 3, CSS Variables (HSL tokens)         |
+| Animations  | Framer Motion                                      |
+| Icons       | Lucide React                                       |
+| Theme       | next-themes                                        |
+| Scrolling   | react-scroll                                       |
+| Deployment  | Vercel                                             |
 
-1. Clone the repository
-2. Install dependencies:
+## 📂 Project Structure
 
-```bash
-npm install
+```
+├── app/
+│   ├── globals.css          # Design system tokens & utilities
+│   ├── layout.tsx           # Root layout with fonts & providers
+│   ├── page.tsx             # Main page composition
+│   ├── loading.tsx          # Loading spinner
+│   └── sitemap.ts           # SEO sitemap
+├── components/
+│   ├── Navbar.tsx           # Sticky pill navigation
+│   ├── Footer.tsx           # Minimal footer
+│   ├── CustomCursor.tsx     # Custom cursor effect
+│   ├── ScrollProgressBar.tsx
+│   ├── ScrollToTop.tsx
+│   ├── ThemeProvider.tsx
+│   └── sections/
+│       ├── Hero.tsx         # Hero with typing effect
+│       ├── About.tsx        # Bento grid about section
+│       ├── Skills.tsx       # Marquee skills display
+│       ├── Experience.tsx   # Timeline experience
+│       ├── Projects.tsx     # GitHub API project cards
+│       └── Contact.tsx      # CTA contact section
+├── tailwind.config.ts
+├── next.config.mjs
+└── package.json
 ```
 
-### Running Locally
-
-Start the development server:
+## 🚀 Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/MithunKiet/mithun-portfolio-v2.git
+
+# Navigate to the project
+cd mithun-portfolio-v2
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-## 🛠️ Built With
+## 📄 License
 
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## 🚀 Deployment
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT © [Mithun Kumar](https://github.com/MithunKiet)
